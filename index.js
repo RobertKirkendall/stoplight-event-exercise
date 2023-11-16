@@ -10,9 +10,14 @@ let goLight = document.getElementById('goLight')
 mouseOverEvents()
 clickEvents()
 
-//Global functions
+//Global functions 
 function changeColor(light,state) {
   light.classList.toggle(state)
+  if (light.classList.length == 2) {
+    console.log(`ON`)
+  } else {
+    console.log(`OFF`)
+  }
 }
 
 function mouseOverEvents() {
